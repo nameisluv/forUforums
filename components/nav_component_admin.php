@@ -11,7 +11,7 @@
 <body id="body-pd">
     <header class="header" id="header">
         <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
-        <div class="header_img"> <a href="student_dashboard.php"> <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> </a></div>
+        <div class="header_img"> <a href="admin_dashboard.php"> <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> </a></div>
     </header>
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
@@ -200,30 +200,26 @@
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
             <div>
-                <a href="student_dashboard.php" class="nav_logo">
+                <a href="admin_dashboard.php" class="nav_logo">
                     <i class='bx bx-layer nav_logo-icon'></i>
                     <span class="nav_logo-name">forUfourms</span>
                 </a>
                 <div class="nav_list">
-                    <a href="student_dashboard.php" class="nav_link active">
+                    <a href="admin_dashboard.php" class="nav_link active">
                         <i class='bx bx-grid-alt nav_icon'></i>
                         <span class="nav_name">Dashboard</span>
                     </a>
-                    <a href="public_foums.php" class="nav_link">
+                    <a href="admin_category_forums.php" class="nav_link">
                         <i class='bx bx-user nav_icon'></i>
-                        <span class="nav_name">Public fourms</span>
+                        <span class="nav_name">Your fourms</span>
                     </a>
-                    <a href="problem.php" class="nav_link">
+                    <!-- <a href="problem.php" class="nav_link">
                         <i class='bx bx bx-message-alt-dots nav_icon'></i>
                         <span class="nav_name">Post a problem</span>
-                    </a>
-                    <a href="your_problems.php" class="nav_link">
+                    </a> -->
+                    <a href="solved_problems.php" class="nav_link">
                         <i class='bx bx-message-square-detail nav_icon'></i>
-                        <span class="nav_name">Your problems</span>
-                    </a>
-                    <a href="your_problems.php" class="nav_link">
-                        <i class='bx bx-message-square-detail nav_icon'></i>
-                        <span class="nav_name">Notification</span>
+                        <span class="nav_name">Solved problems</span>
                     </a>
                 </div>
             </div>
