@@ -207,11 +207,11 @@ if(!isset($_SESSION['user_id'])){
                 <div class="col-sm-12 mb-3">
                   <div class="card h-100">
                     <div class="card-body">
+                      
+                      
+                      
                       <h3 class="d-flex align-items-center mb-3">Your problem status</h3>
-
-
-
-                                           <div class="container-fluid overflow-scroll">
+                      <div class="container-fluid overflow-scroll">
 
                                 <div class="row justify-content-center my-5">
                                     <div class="col-10">
@@ -252,13 +252,54 @@ if(!isset($_SESSION['user_id'])){
                                 </div>
                             </div>
                             </div>
+
+
+                            <h3 class="d-flex align-items-center mb-3">Your assignment status</h3>
+              <div class="col-sm-12 mb-3">
+
+                            <div class="row justify-content-center my-5">
+                                    <div class="col-10">
+                                        <table class="table table-bordered">
+                                        <thead class="thead">
+                                            <tr>
+                                            <th scope="col">Sl no</th>
+                                            <th scope="col">Subject</th>
+                                            <th scope="col">Assignment name</th>
+                                            <th scope="col">Problem description</th>
+                                            <th scope="col">Due date</th>
+                                            <th scope="col">Status</th>                                            
+                                            </tr>
+                                        </thead>
+                                    <tbody>      
+                                <?php
+
+
+                            require "config.php";
+                                    $id = $_SESSION['user_id'];
+                                    $query = "SELECT * FROM problem WHERE s_id='$id';";
+                                    $result = mysqli_query($conn, $query);
+
+                                        while ($Row = mysqli_fetch_assoc($result)) { ?>
+                                    <tr>
+                                        <td><?php echo $Row["c_id"]; ?></td>
+                                        <td><?php echo $Row["c_cat"]; ?></td>
+                                        <td><?php echo $Row["c_name"]; ?></td>
+                                        <td><?php echo $Row["c_detail"]; ?></td>
+                                        <td><?php echo $Row["c_date"]; ?></td>
+                                        <td><?php echo $Row["c_status"]; ?></td>
+                                    </tr>
+                                        <?php
+                                    }
+                            ?>
+                                    </tbody>
+                                </table>
+                                </div>
+                            </div>
+                            </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-
-              <div class="col-sm-12 mb-3">
 
 
 
