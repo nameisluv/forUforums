@@ -20,5 +20,3 @@ admin login
 
 admin id : kambli@gmail.com
 password : kambli
-
-
