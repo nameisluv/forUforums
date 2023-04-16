@@ -61,7 +61,7 @@ if(isset($_POST['submit'])){
       <input type="text" name="usn" required placeholder="enter your usn">
       <input type="password" name="password" required placeholder="enter your password">
       <input type="submit" name="submit" value="login now" class="form-btn">
-      <p>teacher login <a href="index_admin.php">here</a></p>
+      <p>Admin login <a href="index_admin.php">here</a></p>
       <p>don't have an account? <a href="register_form.php">register now</a></p>
    </form>
 

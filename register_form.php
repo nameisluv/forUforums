@@ -88,7 +88,7 @@ if(isset($_POST['submit'])){
          <option value="MCA">MCA</option>
       </select>
       <input type="submit" name="submit" value="register now" class="form-btn">
-      <p>teacher login <a href="register_form_admin.php">here</a></p>
+      <p>Admin login <a href="register_form_admin.php">here</a></p>
       <p>already have an account? <a href="index.php">login now</a></p>
 
    </form>

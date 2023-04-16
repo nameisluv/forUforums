@@ -221,8 +221,8 @@
                         <i class='bx bx-message-square-detail nav_icon'></i>
                         <span class="nav_name">Your problems</span>
                     </a>
-                    <a href="your_problems.php" class="nav_link">
-                        <i class='bx bx-message-square-detail nav_icon'></i>
+                    <a href="notifications.php" class="nav_link">
+                        <i class='bx bx bx-receipt nav_icon'></i>
                         <span class="nav_name">Notification</span>
                     </a>
                 </div>
